@@ -46,7 +46,6 @@ const Container3 = styled.div`
 `;
 const Banner = styled.div`
   background: rgb(93 156 211);
-  height: 80vh;
   @media (max-width: 640px) {
     height: 100%;
     padding-bottom: 2rem;

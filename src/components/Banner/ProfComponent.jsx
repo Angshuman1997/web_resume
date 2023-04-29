@@ -15,39 +15,59 @@ const ProfComponent = () => {
           <h1 className="green">Angshuman Bardhan</h1>
           <h3>Full Stack Developer</h3>
           <p>
-          A reliable and responsible individual with
-          good knowledge of both Programming and
-          Analytics. Possessing good communication
-          and interpersonal skills, is fully capable of
-          working on own initiative, but can also work
-          as part of a team.
+            A reliable and responsible individual with good knowledge of both
+            Programming and Analytics. Possessing good communication and
+            interpersonal skills, is fully capable of working on own initiative,
+            but can also work as part of a team.
           </p>
           <Social>
             <p>Social Links</p>
             <div className="social-icons">
               <span>
-                <a href={process.env.REACT_APP_INSTAGRAM} target="_blank" rel="noreferrer">
+                <a
+                  href={process.env.REACT_APP_INSTAGRAM}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <AiOutlineInstagram />
                 </a>
               </span>
               <span>
-                <a href={process.env.REACT_APP_GITHUB} target="_blank" rel="noreferrer">
+                <a
+                  href={process.env.REACT_APP_GITHUB}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <AiOutlineGithub />
                 </a>
               </span>
               <span>
-                <a href={process.env.REACT_APP_LINKEDIN} target="_blank" rel="noreferrer">
+                <a
+                  href={process.env.REACT_APP_LINKEDIN}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaLinkedinIn />
                 </a>
               </span>
             </div>
           </Social>
+          <ResumeBtn>
+            <button>
+              <a
+                href={require("../../assets/resume/resume.pdf")}
+                download="Angshuman_Bardhan_Resume.pdf"
+              >
+                Download Resume
+              </a>
+            </button>
+          </ResumeBtn>
         </Texts>
       </Slide>
       <Slide direction="right">
         <Profile>
           <img
-          src={require("../../assets/images/face_pro_pic.jpg")}
+            src={require("../../assets/images/face_pro_pic.jpg")}
             alt="profile"
           />
         </Profile>
@@ -76,7 +96,7 @@ const Container = styled.div`
 `;
 const Texts = styled.div`
   flex: 1;
-  span{
+  span {
     color: #ffffff;
   }
   h4 {
@@ -157,5 +177,31 @@ const Profile = styled.div`
 
   :hover img {
     transform: translateY(-10px);
+  }
+`;
+
+const ResumeBtn = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+
+  button {
+    background-color: #ffffff;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #5d9cd3;
+    cursor: pointer;
+  }
+
+  a {
+    color: #0060b6;
+    text-decoration: none;
   }
 `;
