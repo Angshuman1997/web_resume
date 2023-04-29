@@ -10,9 +10,9 @@ const ProfComponent = () => {
       <Slide direction="left">
         <Texts>
           <h4>
-            Hello <span className="green">I'm</span>
+            Hello I'm
           </h4>
-          <h1 className="green">Angshuman Bardhan</h1>
+          <h1>Angshuman Bardhan</h1>
           <h3>Full Stack Developer</h3>
           <p>
             A reliable and responsible individual with good knowledge of both
@@ -160,7 +160,6 @@ const Profile = styled.div`
   img {
     border-radius: 50%;
     width: 25rem;
-    filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
     @media (max-width: 790px) {
       width: 20rem;
