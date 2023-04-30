@@ -84,14 +84,11 @@ const Footer = () => {
 
   return (
     <>
-      <div
-        id="footer"
-        style={{ color: "rgb(93, 156, 211)", textAlign: "center" }}
-      >
+      <Container2 id="footer">
         <Slide direction="left" delay={1}>
           <h1>Connect</h1>
         </Slide>
-      </div>
+      </Container2>
       <Container>
         <Profile>
           <div className="links">
@@ -236,6 +233,14 @@ const Footer = () => {
 };
 
 export default Footer;
+
+const Container2 = styled.div`
+  color: rgb(93, 156, 211); 
+  text-align: center;
+  @media (max-width: 840px) {
+    padding-top: 5rem;
+  }
+`;
 
 const Container = styled.div`
   color: rgb(93, 156, 211);
