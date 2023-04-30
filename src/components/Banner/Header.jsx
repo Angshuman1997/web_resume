@@ -11,12 +11,12 @@ const Header = () => {
             <h1>UI Resume</h1>
         </Logo>
         <Nav bar={bar}>
-            <button><a href="#home">Home</a></button>
-            <button><a href="#experience">Experience</a></button>
-            <button><a href="#education">Education</a></button>
-            <button><a href="#skills">Skills</a></button>
-            <button><a href="#project">Projects</a></button>
-            <button><a href="#footer">Connect</a></button>
+            <button onClick={() => setBar(!bar)}><a href="#home">Home</a></button>
+            <button onClick={() => setBar(!bar)}><a href="#experience">Experience</a></button>
+            <button onClick={() => setBar(!bar)}><a href="#education">Education</a></button>
+            <button onClick={() => setBar(!bar)}><a href="#skills">Skills</a></button>
+            <button onClick={() => setBar(!bar)}><a href="#project">Projects</a></button>
+            <button onClick={() => setBar(!bar)}><a href="#footer">Connect</a></button>
         </Nav>
         <div
         onClick={() => setBar(!bar)}
@@ -56,6 +56,7 @@ const Container = styled.div`
             justify-content: center;
             padding: 0.5rem;
             z-index: 100;
+            margin-right: 2rem;
             .bar{
                 position: absolute;
                 width: 100%;
