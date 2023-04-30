@@ -19,11 +19,8 @@ body{
   background-color: var(---background);
   color: #fff;
   overflow-x: hidden;
+  overflow-y: overlay;
   position: relative;
-}
-
-.green {
-  color: #01be96;
 }
 
 .slick-list, .slick-slider, .slick-track{
@@ -57,12 +54,12 @@ body{
 
 /* scroll bar style  */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: transparent;
 }
 
 /* Handle */

@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <Container bar={bar}>
         <Logo>
-            <span className='green'><GiCloudRing/></span>
+            <span><GiCloudRing/></span>
             <h1>UI Resume</h1>
         </Logo>
         <Nav bar={bar}>
@@ -103,7 +103,7 @@ const Nav = styled.div`
         position: fixed;
         display: flex;
         flex-direction: column;
-        background-color: #01be96;
+        background-color: rgb(93 156 211);
         inset: 0;
         justify-content: center;
         align-items: center;
@@ -121,7 +121,7 @@ const Nav = styled.div`
         border: none;
         background: none;
         a{
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
@@ -133,7 +133,7 @@ const Nav = styled.div`
                 right: 0;
                 bottom: -5px;
                 height: 2px;
-                background-color: #fff;
+                background-color: #ffffff;
                 transform: scale(0);
                 transform-origin: right;
                 transition: transform 400ms ease-in-out;
