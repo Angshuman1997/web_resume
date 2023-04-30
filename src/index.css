@@ -20,7 +20,7 @@ body{
   color: #fff;
   overflow-x: hidden;
   overflow-y: overlay;
-  position: relative;
+  position: absolute;
 }
 
 .slick-list, .slick-slider, .slick-track{

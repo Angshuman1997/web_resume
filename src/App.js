@@ -37,7 +37,10 @@ function App() {
 
 export default App;
 
-const Container = styled.div``;
+const Container = styled.div`
+  overflow-x: hidden;
+  overflow-y: overlay;
+`;
 const Container2 = styled.div`
   background: linear-gradient(180deg, #5d9cd3 20%, #ffffff 80%);
 `;
