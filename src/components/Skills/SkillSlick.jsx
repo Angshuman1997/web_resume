@@ -68,6 +68,9 @@ const SkillSlick = () => {
     {
       title: "Cloud Services",
       items: [
+        { subTitle: "Github", frameworks: [] },
+        { subTitle: "Gitlab", frameworks: [] },
+        { subTitle: "Bitbucket", frameworks: [] },
         { subTitle: "Azure", frameworks: ["DevOps"] },
         {
           subTitle: "AWS",
