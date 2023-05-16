@@ -6,24 +6,29 @@ import styled from "styled-components";
 
 let data = [
   {
-    img: require("../../assets/images/no_image.png"),
-    disc: "Project 1",
+    img: require("../../assets/images/fludty-thumbnail.png"),
+    disc: "Fludty",
+    url: "https://fludty.onrender.com/"
   },
   {
     img: require("../../assets/images/no_image.png"),
     disc: "Project 2",
+    url: "/"
   },
   {
     img: require("../../assets/images/no_image.png"),
     disc: "Project 3",
+    url: "/"
   },
   {
     img: require("../../assets/images/no_image.png"),
     disc: "Project 4",
+    url: "/"
   },
   {
     img: require("../../assets/images/no_image.png"),
     disc: "Project 5",
+    url: "/"
   },
 ];
 
