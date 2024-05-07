@@ -16,7 +16,7 @@ const Experience = () => {
               <img
                 src={require("../../assets/images/ust_logo.png")}
                 alt="ust_logo"
-                style={{ width: "6rem", height: "6rem" }}
+                style={{ width: "6rem", height: "6rem", borderRadius: "0.8rem" }}
               />
             }
             compName={"UST GLOBAL"}
@@ -31,7 +31,7 @@ const Experience = () => {
               <img
                 src={require("../../assets/images/piktorlabs_logo.png")}
                 alt="piktorlabs_logo"
-                style={{ width: "6rem", height: "6rem" }}
+                style={{ width: "6rem", height: "6rem", borderRadius: "0.8rem" }}
               />
             }
             compName={"PIKTORLABS"}
@@ -46,7 +46,7 @@ const Experience = () => {
               <img
                 src={require("../../assets/images/klizo_solutions_logo.png")}
                 alt="klizo_solutions_logo"
-                style={{ width: "6rem", height: "6rem" }}
+                style={{ width: "6rem", height: "6rem", borderRadius: "0.8rem" }}
               />
             }
             compName={"KLIZO SOLUTIONS"}
@@ -61,7 +61,7 @@ const Experience = () => {
               <img
                 src={require("../../assets/images/tika_data_logo.png")}
                 alt="tika_data_logo"
-                style={{ width: "6rem", height: "6rem" }}
+                style={{ width: "6rem", height: "6rem", borderRadius: "0.8rem" }}
               />
             }
             compName={"TIKA DATA SERVICES"}
@@ -76,7 +76,7 @@ const Experience = () => {
               <img
                 src={require("../../assets/images/inventateq_logo.png")}
                 alt="inventateq_logo"
-                style={{ width: "6rem", height: "6rem" }}
+                style={{ width: "6rem", height: "6rem", borderRadius: "0.8rem" }}
               />
             }
             compName={"INVENTATEQ"}
@@ -91,7 +91,7 @@ const Experience = () => {
           <img
             src={require("../../assets/images/siemens_logo.png")}
             alt="siemens_logo"
-            style={{ width: "6rem", height: "6rem" }}
+            style={{ width: "6rem", height: "6rem", borderRadius: "0.8rem" }}
           />
         }
         compName={"SIEMENS"}
