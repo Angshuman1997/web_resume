@@ -7,7 +7,7 @@ import { CardActionArea } from '@mui/material';
 
 export default function EduCard({textData}) {
   return (
-    <Card sx={{ maxWidth: 345, backgroundColor: '#b5dded', border: 'solid 0.1rem #b3c1c0'}}>
+    <Card sx={{ color: "#ffffff", maxWidth: 345, backgroundColor: '#434548', border: 'solid 0.1rem #9c9fa5'}}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -19,10 +19,10 @@ export default function EduCard({textData}) {
           <Typography gutterBottom variant="h5" component="div" sx={{fontSize: "1.2rem", height: "3.5rem"}}>
           {textData?.data1}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography>
           <b>{textData?.data2}</b>
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography>
           <b>{textData?.data3}</b>
           </Typography>
         </CardContent>

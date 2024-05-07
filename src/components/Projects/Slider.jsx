@@ -103,12 +103,12 @@ const Buttons = styled.div`
   button {
     width: 3rem;
     height: 3rem;
-    background-color: rgb(255, 255, 255);
-    border: 0.1rem solid #ffffff;
+    background-color: #8a8b8d;
+    border: 0.1rem solid #bfc0c5;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 20%;
     cursor: pointer;
-    color: rgb(10 172 189);
+    color: #ffffff;
     position: absolute;
     top: 45%;
     right: -1rem;

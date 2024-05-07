@@ -9,7 +9,7 @@ import Education from "./components/Education/Education";
 
 function App() {
   return (
-    <>
+    <MainComp>
       <Header />
       <Container>
         <Banner>
@@ -31,24 +31,26 @@ function App() {
           <Footer />
         </LightColor2>
       </Container>
-    </>
+    </MainComp>
   );
 }
 
 export default App;
+
+const MainComp = styled.div``;
 
 const Container = styled.div`
   overflow-x: hidden;
   overflow-y: overlay;
 `;
 const Container2 = styled.div`
-  background: linear-gradient(180deg, #5d9cd3 20%, #ffffff 80%);
+  background: linear-gradient(180deg, #2f3337 20%, #716e6e 80%);
 `;
 const Container3 = styled.div`
-  background: linear-gradient(180deg, #ffffff 20%, #5d9cd3 80%);
+  background: linear-gradient(180deg, #716e6e 20%, #2f3337 80%);
 `;
 const Banner = styled.div`
-  background: rgb(93 156 211);
+  background: #2f3337;
   @media (max-width: 640px) {
     height: 100%;
     padding-bottom: 2rem;
@@ -56,13 +58,13 @@ const Banner = styled.div`
 `;
 
 const LightColor = styled.div`
-  background: linear-gradient(135deg, #5d9cd3 50%, #ffffff 50%);
+  background: linear-gradient(135deg, #2f3337 50%, #716e6e 50%);
 `;
 
 const LightColor2 = styled.div`
-  background: linear-gradient(135deg, #ffffff 50%, #5d9cd3 50%);
+  background: linear-gradient(135deg, #716e6e 50%, #2f3337 50%);
 `;
 
 const LightColor3 = styled.div`
-  background: #ffffff;
+  background: #716e6e;
 `;

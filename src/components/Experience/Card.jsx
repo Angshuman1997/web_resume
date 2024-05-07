@@ -17,7 +17,8 @@ export default Card;
 
 const Container = styled.div`
   width: 100%;
-  background: #2c6470a1;
+  background: #2f3337;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 3rem;
   text-align: center;
   div.jtitle {

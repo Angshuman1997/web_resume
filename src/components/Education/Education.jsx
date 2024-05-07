@@ -52,7 +52,7 @@ const Container = styled.div`
   }
 
   h1 {
-    color: rgb(93, 156, 211);
+    color: #ffffff;
     padding-top: 1rem;
   }
 `;

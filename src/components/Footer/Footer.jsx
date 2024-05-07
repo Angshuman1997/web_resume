@@ -83,7 +83,7 @@ const Footer = () => {
   };
 
   return (
-    <>
+    <React.Fragment>
       <Container2 id="footer">
         <Slide direction="left" delay={1}>
           <h1>Connect</h1>
@@ -165,7 +165,7 @@ const Footer = () => {
             <form>
               <div className="name">
                 <span>
-                  <CgProfile size={25} />
+                  <CgProfile size={25} style={{color: '#ffffff'}} />
                 </span>
                 <input
                   value={fname}
@@ -178,7 +178,7 @@ const Footer = () => {
               </div>
               <div className="email">
                 <span>
-                  <MdAlternateEmail size={25} />
+                  <MdAlternateEmail size={25} style={{color: '#ffffff'}}/>
                 </span>
                 <input
                   value={emailId}
@@ -191,7 +191,7 @@ const Footer = () => {
               </div>
               <div className="message">
                 <span className="messageIcon">
-                  <FiMail size={25} />
+                  <FiMail size={25} style={{color: '#ffffff'}}/>
                 </span>
                 <textarea
                   value={msg}
@@ -228,14 +228,14 @@ const Footer = () => {
         openNotify={openNotify}
         setOpenNotify={setOpenNotify}
       />
-    </>
+    </React.Fragment>
   );
 };
 
 export default Footer;
 
 const Container2 = styled.div`
-  color: rgb(93, 156, 211); 
+  color: #ffffff; 
   text-align: center;
   @media (max-width: 840px) {
     padding-top: 5rem;
@@ -263,6 +263,7 @@ const Container = styled.div`
 `;
 const Profile = styled.div`
   flex: 1;
+  color: #ffffff;
   h4 {
     font-weight: 400;
   }
@@ -279,7 +280,7 @@ const Profile = styled.div`
       gap: 0.5rem;
       a {
         text-decoration: none;
-        color: lightgray;
+        color: #ffffff;
         :hover {
           color: #add8e6;
         }
@@ -302,14 +303,16 @@ const Profile = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #688dadf7;
+        background-color: #4d4e51;
+        border: 0.1rem solid #ffffff;
         width: 2rem;
         height: 2rem;
         margin-right: 0.5rem;
         border-radius: 50px;
 
         :hover {
-          background-color: #0096ff;
+          background-color: #262729;
+          border: 0.1rem solid #262729;
         }
 
         a {
@@ -323,7 +326,7 @@ const Profile = styled.div`
 const ArrowUp = styled.div`
   width: 2rem;
   height: 2rem;
-  background-color: rgb(93, 156, 211);
+  background-color: #202123;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -367,7 +370,7 @@ const Form = styled.div`
         padding: 1rem 0.5rem;
       }
       span {
-        background-color: #c8dfde;
+        background-color: #3a3a3d;
         width: 3rem;
         display: flex;
         align-items: center;
@@ -382,7 +385,7 @@ const Form = styled.div`
     button {
       width: 100%;
       height: 1.8rem;
-      background-color: rgb(93, 156, 211);
+      background-color: #2b2c2d;
       color: #ffffff;
       border: none;
       border-radius: 5px;

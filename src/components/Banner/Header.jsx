@@ -30,7 +30,7 @@ const Header = () => {
 export default Header
 
 const Container = styled.div`
-    background-color: rgb(93 156 211);
+    background-color: #2f3337;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,7 +104,7 @@ const Nav = styled.div`
         position: fixed;
         display: flex;
         flex-direction: column;
-        background-color: rgb(93 156 211);
+        background-color: #2f3337;
         inset: 0;
         justify-content: center;
         align-items: center;

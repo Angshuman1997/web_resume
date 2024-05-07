@@ -9,9 +9,7 @@ const ProfComponent = () => {
     <Container id="home">
       <Slide direction="left">
         <Texts>
-          <h4>
-            Hello I'm
-          </h4>
+          <h4>Hello I'm</h4>
           <h1>Angshuman Bardhan</h1>
           <h3>Full Stack Developer</h3>
           <p>
@@ -20,48 +18,50 @@ const ProfComponent = () => {
             interpersonal skills, is fully capable of working on own initiative,
             but can also work as part of a team.
           </p>
-          <Social>
-            <p>Social Links</p>
-            <div className="social-icons">
-              <span>
+          <SociRes>
+            <Social>
+              <p>Social Links</p>
+              <div className="social-icons">
+                <span>
+                  <a
+                    href={process.env.REACT_APP_INSTAGRAM}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <AiOutlineInstagram />
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href={process.env.REACT_APP_GITHUB}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <AiOutlineGithub />
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href={process.env.REACT_APP_LINKEDIN}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                </span>
+              </div>
+            </Social>
+            <ResumeBtn>
+              <button>
                 <a
-                  href={process.env.REACT_APP_INSTAGRAM}
-                  target="_blank"
-                  rel="noreferrer"
+                  href={require("../../assets/resume/resume.pdf")}
+                  download="Angshuman_Bardhan_Resume.pdf"
                 >
-                  <AiOutlineInstagram />
+                  Download Resume
                 </a>
-              </span>
-              <span>
-                <a
-                  href={process.env.REACT_APP_GITHUB}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <AiOutlineGithub />
-                </a>
-              </span>
-              <span>
-                <a
-                  href={process.env.REACT_APP_LINKEDIN}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </span>
-            </div>
-          </Social>
-          <ResumeBtn>
-            <button>
-              <a
-                href={require("../../assets/resume/resume.pdf")}
-                download="Angshuman_Bardhan_Resume.pdf"
-              >
-                Download Resume
-              </a>
-            </button>
-          </ResumeBtn>
+              </button>
+            </ResumeBtn>
+          </SociRes>
         </Texts>
       </Slide>
       <Slide direction="right">
@@ -77,6 +77,13 @@ const ProfComponent = () => {
 };
 
 export default ProfComponent;
+
+const SociRes = styled.div`
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+  margin: 3rem 0;
+`;
 
 const Container = styled.div`
   display: flex;
@@ -120,7 +127,6 @@ const Texts = styled.div`
   }
 `;
 const Social = styled.div`
-  margin-top: 3rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -139,7 +145,7 @@ const Social = styled.div`
       width: 2.3rem;
       height: 2rem;
       clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-      background-color: #397ab1;
+      background-color: #5d5959;
       position: relative;
       transition: transform 400ms ease-in-out;
       :hover {
@@ -183,7 +189,6 @@ const ResumeBtn = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
 
   button {
     background-color: #ffffff;
@@ -195,12 +200,17 @@ const ResumeBtn = styled.div`
     border-radius: 1.5rem;
     font-size: 0.8rem;
     font-weight: 600;
-    color: #5d9cd3;
+    color: #2f3337;
     cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  button:hover {
+    transform: translateY(-3px); /* Move the button up by 3px on hover */
   }
 
   a {
-    color: #0060b6;
+    color: #2f3337;
     text-decoration: none;
   }
 `;
