@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { PieChart } from '@mui/x-charts/PieChart';
+import * as React from "react";
+import { PieChart } from "@mui/x-charts/PieChart";
 
 const data = [
   { id: 0, label: "JavaScript", value: 90, color: "#004ccc" },
@@ -17,7 +17,14 @@ const data = [
 ];
 
 const ChartWrapper = ({ children }) => (
-  <div style={{ cursor: 'pointer', width: '100%', maxWidth: '800px', margin: '0 auto' }}>
+  <div
+    style={{
+      cursor: "pointer",
+      width: "100%",
+      maxWidth: "800px",
+      margin: "0 auto",
+    }}
+  >
     {children}
   </div>
 );
@@ -29,15 +36,21 @@ export default function SkillPie() {
         series={[
           {
             data,
-            highlightScope: { faded: 'global', highlighted: 'item' },
-            faded: { innerRadius: 30, additionalRadius: -30, color: 'gray' },
+            highlightScope: { faded: "global", highlighted: "item" },
+            faded: { innerRadius: 30, additionalRadius: -30, color: "gray" },
+            innerRadius: 30,
+            outerRadius: 200,
+            paddingAngle: 2,
+            cornerRadius: 2,
+            startAngle: -90,
+            endAngle: 270,
           },
         ]}
         height={500}
         sx={{
           "& text tspan": {
-            fill: "white"
-          }
+            fill: "white",
+          },
         }}
       />
     </ChartWrapper>

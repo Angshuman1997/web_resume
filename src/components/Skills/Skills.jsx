@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
 import SkillPie from "./SkillPie";
-
+import SkillGauge from "./SkillGauge";
 
 const Skills = () => {
   return (
@@ -13,7 +13,7 @@ const Skills = () => {
         </h1>
       </Slide>
       <SkillCon>
-        <SkillPie />
+        {window.innerWidth <= 768 ? <SkillGauge /> : <SkillPie />}
       </SkillCon>
     </Container>
   );
