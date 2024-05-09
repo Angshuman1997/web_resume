@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
-import SkillBar from "./SkillBar";
+import SkillPie from "./SkillPie";
+
 
 const Skills = () => {
   return (
@@ -12,7 +13,7 @@ const Skills = () => {
         </h1>
       </Slide>
       <SkillCon>
-        <SkillBar />
+        <SkillPie />
       </SkillCon>
     </Container>
   );
