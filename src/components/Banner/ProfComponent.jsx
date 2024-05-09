@@ -8,6 +8,12 @@ const ProfComponent = () => {
   return (
     <Container id="home">
       <Slide direction="left">
+        <Profile2>
+          <img
+            src={require("../../assets/images/face_pro_pic.jpeg")}
+            alt="profile"
+          />
+        </Profile2>
         <Texts>
           <h4>Hello I'm</h4>
           <h1>Angshuman Bardhan</h1>
@@ -67,7 +73,7 @@ const ProfComponent = () => {
       <Slide direction="right">
         <Profile>
           <img
-            src={require("../../assets/images/face_pro_pic.jpg")}
+            src={require("../../assets/images/face_pro_pic.jpeg")}
             alt="profile"
           />
         </Profile>
@@ -83,6 +89,13 @@ const SociRes = styled.div`
   align-items: center;
   column-gap: 3rem;
   margin: 3rem 0;
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    margin: 2rem 0 0 0;
+  }
 `;
 
 const Container = styled.div`
@@ -164,7 +177,7 @@ const Social = styled.div`
 `;
 const Profile = styled.div`
   img {
-    border-radius: 50%;
+    border-radius: 20%;
     width: 25rem;
     transition: transform 400ms ease-in-out;
     @media (max-width: 790px) {
@@ -182,6 +195,10 @@ const Profile = styled.div`
 
   :hover img {
     transform: translateY(-10px);
+  }
+
+  @media (max-width: 640px) {
+    display: none;
   }
 `;
 
@@ -212,5 +229,27 @@ const ResumeBtn = styled.div`
   a {
     color: #2f3337;
     text-decoration: none;
+  }
+`;
+
+const Profile2 = styled.div`
+  img {
+    border-radius: 20%;
+    width: 25rem;
+    transition: transform 400ms ease-in-out;
+    @media (max-width: 790px) {
+      width: 20rem;
+    }
+
+    @media (max-width: 660px) {
+      width: 18rem;
+    }
+
+    @media (max-width: 640px) {
+      width: 100%;
+    }
+  }
+  @media (min-width: 640px) {
+    display: none;
   }
 `;
